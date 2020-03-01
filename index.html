@@ -1,78 +1,341 @@
-<html lang="en">
-    <head>
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#595d12">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#000000">
+	
+<title>>_</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<style>
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #85929E;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #34495E;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 3%;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 55px;
+}
+.content{
+	background-color: #273746;
+	margin-right:5px;
+	text-align:center;
+}
+#opennav{
+	color:green;
+	position:fixed;
+}
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>MapNep.Com</title>
+#photo{
+	height:relative;
+	width: 50%;
+}
+#photoinfo{
+	border: 1px solid #FFF;
+	position: relative;
+	top: 60%;
+	width: 75%;
+	padding: 10px 3px;
+	margin: auto;
+	color:cornflowerblue;
+}
+@media screen and (min-width: 700px) {
+	#closenav{
+		display:none;
+	}
+	#opennav{
+		display:none;
+	}
+	#myNav{
+		width:auto;
+	}
+  	.overlay-content{
+	  width: 225px;
+	}
+	
+	.content{
+		margin-left:225px;
+	}
+	
+	
+	
+}
+@media screen and (max-width:500px){
+	#photo{
+		width:100%;
+		height:relative;
+	}
+	#photoinfo{
+		width:90%;
+	}
+}
+.personal-photo{
+	height:150px;
+	width:150px;
+	border-radius: 50%;
+}
+h2{
+	color:green;
+	font-weight:lighter;
+	font-size:25px;
+}
+p{
+	color: #818181;
+}
+ul{
+	color: #818181;
+}
+h3{
+	font-weight: lighter;
+	color:green;
+}
+.experience{
+	margin-left:25px;
+	text-align:left;
+}
+.education, .honor{
+	margin-left:55px;
+	text-align:left;
+}
+.v1{
+	border-left: 3px solid green;
+	height: 100%;
+	margin-left:27px;
+	
+}
+</style>
+</head>
+<body>
+<span id="opennav"style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" id="closenav"class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="overlay_content" class="overlay-content">
+	  <img class="personal-photo"src="graduation.jpg">
+    <a href="#introduction" onClick="responsiveClose()">INTRODUCTION</a>
+    <a href="#skills" onClick="responsiveClose()">SKILLS</a>
+    <a href="#experience" onClick="responsiveClose()">EXPERIENCE</a>
+	<a href="#education" onClick="responsiveClose()">EDUCATION</a>
+	<a href="#honor" onClick="responsiveClose()">HONORS</a>
+	<!-- <a href="#gallery" onClick="responsiveClose()">GALLERY</a> -->
+	<a href="#contact" onClick="responsiveClose()">CONTACT</a>
+	<p style="color:green;font-size:15px;">&copy; Bikram Paudel 2019</p>
+  </div>
+</div>
 
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-        <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
+<div class="content">
+		<code id="name"><span style="font-weight:lighter;color:green;font-size:25px; text-align:center;">><span id="blink">_</span>bikram_paudel</span></code>	
+	<div id="introduction"class="about">
+		<h2><i class="fas fa-handshake"></i> Introduction</h2>
+		<p style="margin:5px;">Seeking opportunities to learn and work into a hardworking and honest professional, contributing meaningfully and effectively to the success of the organization whereas at the same time boost knowledge to wide personal skills. I want to get involved and use my time best to learn and earn. Other than coding, I also like watching movies. Sci-fi and Horror are my genre. Some of my interests are developing web apps and software, designing database, practicing Agile methodology in team, learning new tools and trends in tech industry, researching and data collecting. I also have keen interest in Astronomy. Well, who doesn't like stars. </p>
+		<h2>
+			<a style="margin:0px 20px 0px 0px; color:blueviolet;" href="https://github.com/bpaudel2"><i class="fab fa-github"></i></a>
+			<a style="margin:0px 20px 0px 20px;color:blueviolet;"href="https://www.linkedin.com/in/bikram-paudel-481908a2/"><i class="fab fa-linkedin"></i></a>
+			<a style="margin:0px 0px 0px 20px;color:blueviolet;"href="https://stackoverflow.com/users/9803819/b1k"><i class="fab fa-stack-overflow"></i></a>
+		</h2>
+		
+	<hr>
+	</div>
+	<div id="skills"class="skills">
+		<h2> <i class="fas fa-toolbox"></i> My Skills</h2>
+		<div style="margin-left:25px;text-align:left;display:grid;">
+			<span><h3 style="display: inline">Languages:</h3><p style="display: inline">JavaScript, Java, C++, SQL, Python, HTML, CSS, TypeScript, Prolog, C#, VBA</p></span>
+			<span><h3 style="display: inline">Frameworks:</h3><p style="display: inline">Node.js, Express.js, EJS, Jade, Angular, Bootstrap, .NET Core, jQuery, Flask</p></span>
+			<span><h3 style="display: inline">Databases:</h3><p style="display: inline">PostgreSQL, MySQL, Oracle, SQL Server, MongoDB, MSSQL</p></span>
+			<span><h3 style="display: inline">ORM:</h3><p style="display: inline">Hibernate, Entity, SQL Alchemy, Mongoose(ODM)</p></span>
+			<span><h3 style="display: inline">Cloud Computing Platforms:</h3><p style="display: inline">Microsoft Azure</p></span>
+            <span><h3 style="display: inline">Development Tools:</h3><p style="display: inline">Git, GitHub, GitLab, Visual Studio, Eclipse, NetBeans, IntelliJ IDEA, Jypter Notebook, Spyder</p></span>
+            <br>
+		</div>
+	<hr>	
+	</div>
+	<div id="experience">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+		<h2><i class="fas fa-suitcase"></i> Work Experience</h2>
+		<div style="display:grid;grid-gap:5px;grid-template-columns:5% 95%;">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+		
+		<div class="v1"></div>
+		<div class="experience">
+			<div>
+				<h3><i style="color:powderblue;" class="far fa-edit"></i>Programmer Analyst <span><small style="color:#818181">Jun 2019-Present</small></span></h3>
+				<p>
+				<a style="color:rgb(0, 132, 255);"href="https://www.google.com/maps/place/9020+N+May+Ave+%23140,+Oklahoma+City,+OK+73120/@35.562602,-97.5679622,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21ba728aa5b29:0xb4f9662d1826c54e!8m2!3d35.562602!4d-97.5657735">Revenue Management Solutions, 9020 N May Ave #140, Oklahoma City, OK 73120</a>
+				</p>
+				<p>Fixing, Improving and Writing Programs; Development Team </p>
+				<p>Fixing bugs, Writing or Improving existing programs in JAVA, .NET and VB</p>				
+			</div>
+			<div>
+				<h3><i style="color:powderblue;" class="far fa-edit"></i>DevOps Engineer <span><small style="color:#818181">Jan 2019-Jun 2019</small></span></h3>
+				<p>
+				<a style="color:rgb(0, 132, 255);"href="https://www.google.com/maps/place/9020+N+May+Ave+%23140,+Oklahoma+City,+OK+73120/@35.562602,-97.5679622,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21ba728aa5b29:0xb4f9662d1826c54e!8m2!3d35.562602!4d-97.5657735">Revenue Management Solutions, 9020 N May Ave #140, Oklahoma City, OK 73120</a>
+				</p>
+				<p>Automating, Deploying and Troubleshooting; DevOps Team</p>
+				<p>Troubleshooting production issues, Deploying Java Applications, Monitoring Servers, Writing CI CD pipeline using GitLab and Ansible and Creating or Improving existing scripts in SQL, JS, bash and Python for internal websites and maintenance purpose</p>
+				
+			</div>
+			<div>
+				<h3><i style="color:powderblue;" class="far fa-edit"></i>Summer Intern <span><small style="color:#818181">Jun 2018-Aug 2018</small></span></h3>
+				<p>
+				<a style="color:rgb(0, 132, 255);"href="https://www.google.com/maps/place/Whitacre+Tower,+208+S+Akard+St,+Dallas,+TX+75201/@32.779561,-96.801078,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9918ddd5d1c3:0xf783f2cfc79e0fb8!8m2!3d32.779561!4d-96.7988893">AT&T Headquarter, 208 S Akard St, Dallas, TX 75201</a>
+				</p>
+				<p>Data Analyzing using Python, VBA and Excel; 911 Service Management Team</p>
+				<p>Analyzing 911 Revenue data nation wide in order to understand 911 Revenue trend, Analyzing tech dispatch data to Public Safety Answering Point(PSAP) to explore the opportunities for reducing tech dispatch</p>
+				
+			</div>
+			<div>
+				<h3><i style="color:powderblue;" class="far fa-edit"></i>Research Assistant <span><small style="color:#818181">May 2017-Dec 2018</small></span></h3>
+				<p>
+				<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Computer Science Department at UCO, 100 N. University Dr., Edmond, OK 73034</a>
+				</p>
+				<p>Creating Web App for SQL Command Animation using ANTLR4 and JavaScript; Working under Dr. Gang Qian</p>
+				<p>Writing code for SQL query evaluation and table animation in JavaScript in order to create SQL teaching tool</p>
+			</div>
+			<div>
+				<h3><i style="color:powderblue;" class="far fa-edit"></i>Data Assistant <span><small style="color:#818181">Sep 2017-Feb 2018</small></span></h3>
+				<p>
+				<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Student Support Services at UCO, 100 N. University Dr., Edmond, OK 73034</a>
+				</p>
+				<p>Creating reports using Campus's Database and Excel</p>
+				<p>Verifying and entering data into BLUMEN, Retrieving student data from Campus's Database and Creating reports and visualization in Excel as required</p>
+			</div>
+			<div>
+				<h3><i style="color:powderblue;" class="far fa-edit"></i>Tutor <span><small style="color:#818181">Jul 2017-Dec 2018</small></span></h3>
+				<p>
+				<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Tutoring Central at UCO, 100 N. University Dr., Edmond, OK 73034</a>
+				</p>
+				<p>Tutoring, Planning Event, Managing Web Content</p>
+				<p>Tutoring Mathematics, Computer Programming and Science, Assisting with Web Content Managing and UI Designing, Event Planning for Conversation Central, Presenting about Tutoring Central in various Events on Campus</p>
+			</div>
+		</div>
+	</div>
+		<hr>
+	</div>
+	<div id="education">
+		<h2><i class="fas fa-graduation-cap"></i> Education</h2>
+		<div class="education">
+			<div>
+				<h3><i style="color:powderblue;" class="far fa-edit"></i><a style="color:green;" href="https://www.uco.edu/">University of Central Oklahoma</a><span><small style="color:#818181"> 2014-2018</small></span></h3>
+				<p>
+				<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">100 N. University Dr., Edmond, OK 73034</a>
+				</p>
+				<p>Undergraduate Degree, GPA:3.66</p>
+				<p>Major in Computer Science-Applied, Minor in Mathematics</p>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<div id="honor">
+		<h2><i class="fas fa-award"></i> Honor</h2>
+		<div class="honor">
+			<p><i class="fas fa-circle"></i> Computer Science Department Research Award</p>
+			<p>Academic Year 2018 - 2019</p>
+			<p><i class="fas fa-circle"></i> John Taylor Beresford Endowed Scholarship for Computer Science Recipient</p>
+			<p>Fall 2017, Spring 2018, Fall 2018</p>
+			<p><i class="fas fa-circle"></i> UCO First Generation Scholarship Recipient</p>
+			<p>Fall 2017, Spring 2018</p>
+			<p><i class="fas fa-circle"></i> Nonresident Retention Scholarship</p>
+			<p>Spring 2017, Spring 2018</p>
+			<p><i class="fas fa-circle"></i> President's Honor Roll</p>
+			<p>Fall 2014, Fall 2017, Spring 2018, Fall 2018</p>
+			<p><i class="fas fa-circle"></i> Dean's Honor Roll</p>
+			<p>Spring 2017</p>
+		</div>
+		<hr>
+	</div>
+	<!-- <div id="gallery"class="gallery">
+		<h2><i class="fas fa-camera-retro"></i> Gallery</h2>
+		<img id="photo" src="./dallasfoodbank.jpg">
+		<h3 id="photoinfo">Volunteering at Dallas Food Bank</h3>
+		
+		<hr>
+	</div> -->
+	<div id="contact"class="contact" style="margin-bottom:20px;">
+		<h2><i class="fas fa-envelope"></i> Contact</h2>
+		<p><a style="color:cadetblue" href="mailto:beekpal@gmail.com"><i class="far fa-envelope"></i> beekpal@gmail.com </a></p>
+		<p><i style="margin-left:10px;"class="fas fa-mobile-alt"></i> 469.536.9581</P>
+        <br>
+        <p style="color:green;font-size:15px;">&copy; Bikram Paudel 2019</p>
+        <br>
+	</div>
+</div>
 
-        <link rel="stylesheet" type="text/css" href="assets/css/vegas.min.css">
-
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-
-        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-
-        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    </head>
-    <body>
-        <div class="bg-wraper overlay has-vignette">
-            <div id="example" class="slider opacity-50 vegas-container" style="height: 983px;"></div>
-        </div>
-
-        <section class="countdown-timer">
-            <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-12 col-xs-12 text-center">
-                    <div class="heading-count">
-                        <h1><em>MapNep.Com</em></h1>
-                        <br/>
-                        <h2>COMING SOON</h2>
-                        <p class="text-light">Under Construction !!!</p>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-12 col-xs-12">
-                    <div class="row time-countdown line-right justify-content-center">
-                        <div id="clock" class="time-count"></div>
-                    </div>
-                
-                </div>
-            </div>
-            </div>
-        </section>
-
-
-        <div id="preloader">
-            <div class="loader" id="loader-1"></div>
-        </div>
-
-        <script src="./assets/js/jquery.min.js"></script>
-        <script src="./assets/js/jquery.countdown.min.js"></script>
-        <script src="./assets/js/popper.min.js"></script>
-        <script src="./assets/js/bootstrap.min.js"></script>
-        <script src="./assets/js/vegas.min.js"></script>
-        <script src="./assets/js/classie.js"></script>
-        <script src="./assets/js/jquery.nav.js"></script>
-        <script src="./assets/js/jquery.easing.min.js"></script>
-        <script src="./assets/js/wow.js"></script>
-        <script src="./assets/js/jquery.slicknav.js"></script>
-        <script src="./assets/js/main.js"></script>
-        <script type="text/javascript">
-            $("#example").vegas({
-                timer: false,
-                delay: 6000,
-                transitionDuration: 15000,
-                transition: "blur",
-                slides: [
-                    { src: "assets/img/loop.gif" }
-                ]
-            });
-        </script>
-    </body>
+<script>
+// var photoArray=["dallasfoodbank.jpg","scholarship2018.JPG","dallascountypsap.jpg","ncur2018.JPG","scholarship2017.jpg","oklahomaresearchday2018.jpg"]	
+// var aboutPhoto=["Volunteering at Dallas Food Bank","Receiving Scholarship, 2018","Dallas County PSAP Tour to learn about 911 Equipment","Presenting at National Conference On Undergraduate Research, 2018","Receiving Scholarship, 2017","Presenting at Oklahoma Research Day, 2018"]
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("overlay_content").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+window.addEventListener("load", function() {
+	var f = document.getElementById('blink');
+    setInterval(function() {
+        f.style.opacity = (f.style.opacity == '0' ? '1' : '0');
+	}, 500);
+}, false);
+// var photoIndex =0;
+// function changeImage(){
+// 	var imageUrl="./"+photoArray[photoIndex];
+// 	var photo = document.getElementById('photo');
+// 	var photoCaption = aboutPhoto[photoIndex];
+// 	var photoInfo = document.getElementById("photoinfo");
+// 	photo.src=imageUrl;
+// 	photoInfo.innerHTML = photoCaption;
+// 	photoIndex++;
+// 	if(photoIndex>=photoArray.length){
+// 		photoIndex =0;
+// 	}
+// }
+// setInterval(changeImage, 5000);
+function responsiveClose(){
+	const navbar = document.querySelector('#myNav');
+	var width=navbar.style.width;
+	if(width=="100%"){
+		closeNav();
+	}
+	
+}
+</script>
+     
+</body>
 </html>
