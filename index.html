@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+<!--
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+-->	
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -140,6 +142,18 @@ h3{
 	margin-left:27px;
 	
 }
+
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 </head>
 <body>
@@ -156,38 +170,39 @@ h3{
 	<!-- <a href="#gallery" onClick="responsiveClose()">GALLERY</a> -->
 	<a href="#contact" onClick="responsiveClose()">CONTACT</a>
 	<p style="color:green;font-size:15px;">&copy; Bikram Paudel 2019</p>
+	<p style="background-color:Black;">
+		<a href="https://bpaudel2.github.io/sql-animation/">
+			<span style="background-color:Tomato;">P</span>
+			<span style="background-color:Orange;">R</span>
+			<span style="background-color:DodgerBlue;">O</span>			
+			<span style="background-color:MediumSeaGreen;">J</span>
+			<span style="background-color:SlateBlue;">E</span>
+			<span style="background-color:Violet;">C</span>
+			<span style="background-color:Red;">T</span>
+		</a>
+	</p>
+	
   </div>
+  
 </div>
 
 
 <div class="content">
-		<code id="name"><span style="font-weight:lighter;color:green;font-size:25px; text-align:center;">><span id="blink">_</span>bikram_paudel</span></code>	
+		<code id="name"><span style="font-weight:lighter;color:green;font-size:25px; text-align:center;">><span id="blink">_</span>bikram_paudel</span></code>
 	<div id="introduction"class="about">
 		<h2><i class="fas fa-handshake"></i> Introduction</h2>
 		<p style="margin:5px;">Knowledge of multiple programming languages and web development frameworks with experience of working 
 			at Healthcare, Education and Telecommunication industries. My interests are developing web apps and softwares, designing 
 			database, researching/learning new tools and trends in tech industry, data collecting and practicing agile methodology in 
-			a team. I also have keen interest in Astronomy. Well, who doesn't like stars. </p>
+			a team. I also have keen interest in Astronomy. Well, who doesn't like stars. <i class="fas fa-star"></i>
+			<i class="fas fa-star"></i><i class="fas fa-star"></i></p>
 		<h2>
 			<a style="margin:0px 20px 0px 0px; color:blueviolet;" href="https://github.com/bpaudel2"><i class="fab fa-github"></i></a>
-			<a style="margin:0px 20px 0px 20px;color:blueviolet;"href="https://www.linkedin.com/in/bikram-paudel-481908a2/"><i class="fab fa-linkedin"></i></a>
+			<a style="margin:0px 20px 0px 20px;color:blueviolet;"href="https://www.linkedin.com/in/bikram-paudel-9b762419a/"><i class="fab fa-linkedin"></i></a>
 			<a style="margin:0px 0px 0px 20px;color:blueviolet;"href="https://stackoverflow.com/users/9803819/b1k"><i class="fab fa-stack-overflow"></i></a>
 		</h2>
 		
 	<hr>
-	</div>
-	<div id="skills"class="skills">
-		<h2> <i class="fas fa-toolbox"></i> My Skills</h2>
-		<div style="margin-left:25px;text-align:left;display:grid;">
-			<span><h3 style="display: inline">Languages:</h3><p style="display: inline">JavaScript, Java, C#, VBA, SQL, Python, C++, HTML, CSS, TypeScript, Prolog</p></span>
-			<span><h3 style="display: inline">Frameworks:</h3><p style="display: inline">Node.js, Express.js, EJS, Jade, Angular, Bootstrap, .NET Core, ASP.NET, jQuery, Flask, Razor Pages</p></span>
-			<span><h3 style="display: inline">Databases:</h3><p style="display: inline">MSSQL, PostgreSQL, MySQL, Oracle, MongoDB</p></span>
-			<span><h3 style="display: inline">ORM:</h3><p style="display: inline">Entity, Hibernate, SQL Alchemy, Mongoose(ODM)</p></span>
-			<span><h3 style="display: inline">Cloud Computing Platforms:</h3><p style="display: inline">Microsoft Azure</p></span>
-            <span><h3 style="display: inline">Development Tools:</h3><p style="display: inline">Git, GitHub, GitLab, Visual Studio, Eclipse, NetBeans, IntelliJ IDEA, Jypter Notebook, Spyder</p></span>
-            <br>
-		</div>
-	<hr>	
 	</div>
 	<div id="experience">
 
@@ -230,7 +245,8 @@ h3{
 				<ul>
 					<li>Analyzing 911 Revenue data Nationwide to understand 911 Revenue Trend</li>
 					<li>Automating Data visualization and data gathering using SQL, Python, Excel, and VBA</li>
-					<li>Analyzing Tech Dispatch data to Public Safety Answering Point (PSAP) to explore the opportunities for reducing Tech Dispatch</li>
+					<li>Analyzing Tech Dispatch data to Public Safety Answering Point (PSAP) to explore the opportunities 
+						for reducing Tech Dispatch</li>
 				</ul>				
 			</div>
 			<div>
@@ -239,28 +255,55 @@ h3{
 				<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Computer Science Department at UCO, 100 N. University Dr., Edmond, OK 73034</a>
 				</p>
 				<p>Creating Web App for SQL Command Animation using ANTLR4 and JavaScript; Working under Dr. Gang Qian</p>
-				<p>Writing code for SQL query evaluation and table animation in JavaScript in order to create SQL teaching tool</p>
+				<ul>
+					<li>Implementing Lexer and Parser for SQL Language</li>
+					<li>Creating Animation for Execution Tree</li>
+					<li>Presenting the research idea prototype for web app at Oklahoma Research Day 2018 and
+						National Conference of Undergraduate Research (NCUR) 2018</li>
+				</ul>
 			</div>
 			<div>
 				<h3><i style="color:powderblue;" class="far fa-edit"></i>Data Assistant <span><small style="color:#818181">Sep 2017-Feb 2018</small></span></h3>
 				<p>
 				<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Student Support Services at UCO, 100 N. University Dr., Edmond, OK 73034</a>
 				</p>
-				<p>Creating reports using Campus's Database and Excel</p>
-				<p>Verifying and entering data into BLUMEN, Retrieving student data from Campus's Database and Creating reports and visualization in Excel as required</p>
+				<p>Creating reports using Campus's Database and Excel; Student Support Services</p>
+				<ul>
+					<li>Verifying and entering data into BLUMEN</li>
+					<li>Retrieving student data from Campus's Database and Creating reports and visualization in Excel as required</li>
+				</ul>
 			</div>
 			<div>
 				<h3><i style="color:powderblue;" class="far fa-edit"></i>Tutor <span><small style="color:#818181">Jul 2017-Dec 2018</small></span></h3>
 				<p>
 				<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Tutoring Central at UCO, 100 N. University Dr., Edmond, OK 73034</a>
 				</p>
-				<p>Tutoring, Planning Event, Managing Web Content</p>
-				<p>Tutoring Mathematics, Computer Programming and Science, Assisting with Web Content Managing and UI Designing, Event Planning for Conversation Central, Presenting about Tutoring Central in various Events on Campus</p>
+				<p>Tutoring, Planning Event, Managing Web Content; Tutoring Central</p>
+				<ul>
+					<li>Tutoring Computer Programming, Mathematics, Physics and Chemistry</li>
+					<li>Assisting Tutoring Central with Web Content Managing and UI Designing</li>
+					<li>Event Planning for Conversation Central</li>
+					<li>Presenting about Tutoring Central in various events on Campus</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 		<hr>
 	</div>
+	<div id="skills"class="skills">
+		<h2> <i class="fas fa-toolbox"></i> My Skills</h2>
+		<div style="margin-left:25px;text-align:left;display:grid;">
+			<span><h3 style="display: inline">Languages:</h3><p style="display: inline">JavaScript, Java, C#, VBA, SQL, Python, C++, HTML, CSS, TypeScript, Prolog</p></span>
+			<span><h3 style="display: inline">Frameworks:</h3><p style="display: inline">Node.js, Express.js, EJS, Jade, Angular, Bootstrap, .NET Core, ASP.NET, jQuery, Flask, Razor Pages</p></span>
+			<span><h3 style="display: inline">Databases:</h3><p style="display: inline">MSSQL, PostgreSQL, MySQL, Oracle, MongoDB</p></span>
+			<span><h3 style="display: inline">ORM:</h3><p style="display: inline">Entity, Hibernate, SQL Alchemy, Mongoose(ODM)</p></span>
+			<span><h3 style="display: inline">Cloud Computing Platforms:</h3><p style="display: inline">Microsoft Azure</p></span>
+            <span><h3 style="display: inline">Development Tools:</h3><p style="display: inline">Git, GitHub, GitLab, Visual Studio, Eclipse, NetBeans, IntelliJ IDEA, Jypter Notebook, Spyder</p></span>
+            <br>
+		</div>
+	<hr>	
+	</div>
+	
 	<div id="education">
 		<h2><i class="fas fa-graduation-cap"></i> Education</h2>
 		<div class="education">
@@ -278,18 +321,26 @@ h3{
 	<div id="honor">
 		<h2><i class="fas fa-award"></i> Honor</h2>
 		<div class="honor">
-			<p><i class="fas fa-circle"></i> Computer Science Department Research Award</p>
-			<p>Academic Year 2018 - 2019</p>
-			<p><i class="fas fa-circle"></i> John Taylor Beresford Endowed Scholarship for Computer Science Recipient</p>
-			<p>Fall 2017, Spring 2018, Fall 2018</p>
-			<p><i class="fas fa-circle"></i> UCO First Generation Scholarship Recipient</p>
-			<p>Fall 2017, Spring 2018</p>
-			<p><i class="fas fa-circle"></i> Nonresident Retention Scholarship</p>
-			<p>Spring 2017, Spring 2018</p>
-			<p><i class="fas fa-circle"></i> President's Honor Roll</p>
-			<p>Fall 2014, Fall 2017, Spring 2018, Fall 2018</p>
-			<p><i class="fas fa-circle"></i> Dean's Honor Roll</p>
-			<p>Spring 2017</p>
+			<div class="row">
+				<div class="column">
+						<p><i class="fas fa-circle"></i> Computer Science Department Research Award</p>
+						<p>Academic Year 2018 - 2019</p>
+						<p><i class="fas fa-circle"></i> John Taylor Beresford Endowed Scholarship for Computer Science Recipient</p>
+						<p>Fall 2017, Spring 2018, Fall 2018</p>
+						<p><i class="fas fa-circle"></i> UCO First Generation Scholarship Recipient</p>
+						<p>Fall 2017, Spring 2018</p>
+				</div>
+				<div class="column">
+						<p><i class="fas fa-circle"></i> Nonresident Retention Scholarship</p>
+						<p>Spring 2017, Spring 2018</p>
+						<p><i class="fas fa-circle"></i> President's Honor Roll</p>
+						<p>Fall 2014, Fall 2017, Spring 2018, Fall 2018</p>
+						<p><i class="fas fa-circle"></i> Dean's Honor Roll</p>
+						<p>Spring 2017</p>
+				</div>
+			</div>
+			
+			
 		</div>
 		<hr>
 	</div>
@@ -349,6 +400,10 @@ function responsiveClose(){
 	
 }
 </script>
-     
+<!--
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
+-->
 </body>
 </html>
