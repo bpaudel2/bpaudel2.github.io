@@ -17,13 +17,20 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" href="style5.css">
+	<!-- Scrollbar Custom CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	
 </head>
 <body>
 	<div class="wrapper">
 				<!-- Sidebar Holder -->
 	<nav id="sidebar">
+		<div id="dismiss">
+			<i class="fas fa-arrow-left"></i>
+		</div>
 		<div class="sidebar-header">
 			<h3><img class="personal-photo"src="./graduation.jpg"></h3>
 		</div>
@@ -31,50 +38,50 @@
 		<ul class="list-unstyled components">
 			<p>Programmer</p>
 			<li class="active">
-				<a href="#introduction" class="sidebarCollapseBtn">Introduction</a>
+				<a href="#introduction" class="collapsesidebar">Introduction</a>
 			</li>
 			<li>
 				<a href="#experienceSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Experience</a>
 				<ul class="collapse list-unstyled" id="experienceSubmenu">
 					<li>
-						<a href="#programmeranalyst" class="sidebarCollapseBtn">Programmer Analyst</a>
+						<a href="#programmeranalyst" class="collapsesidebar" >Programmer Analyst</a>
 					</li>
 					<li>
-						<a href="#devopsengineer" class="sidebarCollapseBtn">DevOps Engineer</a>
+						<a href="#devopsengineer" class="collapsesidebar">DevOps Engineer</a>
 					</li>
 					<li>
-						<a href="#summerintern" class="sidebarCollapseBtn">Summer Intern</a>
+						<a href="#summerintern" class="collapsesidebar" >Summer Intern</a>
 					</li>
 					<li>
-						<a href="#researchassistant" class="sidebarCollapseBtn">Research Assistant</a>
+						<a href="#researchassistant" class="collapsesidebar">Research Assistant</a>
 					</li>
 					<li>
-						<a href="#dataassistant" class="sidebarCollapseBtn">Data Assistant</a>
+						<a href="#dataassistant" class="collapsesidebar">Data Assistant</a>
 					</li>
 					<li>
-						<a href="#tutor" class="sidebarCollapseBtn">Tutor</a>
+						<a href="#tutor" class="collapsesidebar">Tutor</a>
 					</li>
 				</ul>
 			</li>
 			<li>
 				<li>
-					<a href="#skills" class="sidebarCollapseBtn">Skill</a>
+					<a href="#skills" class="collapsesidebar">Skill</a>
 				</li>
 			</li>
 			<li>
-				<a href="#education">Education</a>
+				<a href="#education" class="collapsesidebar">Education</a>
 			</li>
 			<li>
-				<a href="#honor">Honor</a>
+				<a href="#honor" class="collapsesidebar">Honor</a>
 			</li>
 			<li>
-				<a href="#contact">Contact</a>
+				<a href="#contact" class="collapsesidebar">Contact</a>
 			</li>
 		</ul>
 
 		<ul class="list-unstyled CTAs">
 			<li>
-				<a href="#" class="download">Pet Projects</a>
+				<a href="#" class="projects">Pet Projects</a>
 			</li>
 			
 		</ul>
@@ -85,16 +92,18 @@
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<button type="button" id="sidebarCollapse" class="navbar-btn">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+				
+				<button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span></span>
+						<span></span>
+						<span></span>
+                    </button>
 				<code id="name"><span style="font-weight:lighter;color:green;font-size:25px;">><span id="blink">_</span>bikram_paudel</span></code>
 			</div>
 		</nav>
 		
-		<div id="introduction">
+		<section id="introduction" >
 			<h2 class="title-bullet"><i class="fas fa-handshake"></i> Introduction</h2>
 			<p>Knowledge of multiple programming languages and web development frameworks with experience of working 
 				at Healthcare, Education and Telecommunication industries. My interests are developing web apps and softwares, designing 
@@ -104,15 +113,14 @@
 			</p>
 			<h2>
 				<a style="margin:0px 20px 0px 0px; color:blueviolet;" href="https://github.com/bpaudel2"><i class="fab fa-github"></i></a>
-				<a style="margin:0px 20px 0px 20px;color:blueviolet;"href="https://www.linkedin.com/in/bikram-paudel-9b762419a/"><i class="fab fa-linkedin"></i></a>
+				<a style="margin:0px 20px 0px 0px;color:blueviolet;"href="https://www.linkedin.com/in/bikram-paudel-9b762419a/"><i class="fab fa-linkedin"></i></a>
 			</h2>                
-		</div>
+		</section>
 		<div class="line"></div>
 
-		<div id="experience">
+		<div>
 			<h2 class="title-bullet"><i class="fas fa-suitcase"></i> Work Experience</h2>
-			<div class="experience">
-				<div id="programmeranalyst">
+				<section id="programmeranalyst" >
 					<h4><i class="fas fa-arrow-right"></i>Programmer Analyst <span><small style="color:#818181">Jun 2019-Present</small></span></h4>
 					<p>
 					<a style="color:rgb(0, 132, 255);"href="https://www.google.com/maps/place/9020+N+May+Ave+%23140,+Oklahoma+City,+OK+73120/@35.562602,-97.5679622,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21ba728aa5b29:0xb4f9662d1826c54e!8m2!3d35.562602!4d-97.5657735">Revenue Management Solutions, 9020 N May Ave #140, Oklahoma City, OK 73120</a>
@@ -122,8 +130,8 @@
 						<li>Building/Maintaining Applications in JAVA, VB, and C#(ASP.NET and .NET Core)</li>
 						<li>Building/Maintaining Web Applications using HTML, CSS, JavaScript, and RazorPages.</li>
 					</ul>
-				</div>
-				<div id="devopsengineer">
+				</section>
+				<section id="devopsengineer" >
 					<h4><i class="fas fa-arrow-right"></i>DevOps Engineer <span><small style="color:#818181">Jan 2019-Jun 2019</small></span></h4>
 					<p>
 					<a style="color:rgb(0, 132, 255);"href="https://www.google.com/maps/place/9020+N+May+Ave+%23140,+Oklahoma+City,+OK+73120/@35.562602,-97.5679622,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21ba728aa5b29:0xb4f9662d1826c54e!8m2!3d35.562602!4d-97.5657735">Revenue Management Solutions, 9020 N May Ave #140, Oklahoma City, OK 73120</a>
@@ -135,8 +143,8 @@
 						<li>Creating/Improving scripts in SQL, JS, Python, and Shell for automation and maintenance</li>
 						<li>Implementing CI CD Pipeline using GitLab and Ansible</li>
 					</ul>				
-				</div>
-				<div id="summerintern">
+				</section>
+				<section id="summerintern" >
 					<h4><i class="fas fa-arrow-right"></i>Summer Intern <span><small style="color:#818181">Jun 2018-Aug 2018</small></span></h4>
 					<p>
 					<a style="color:rgb(0, 132, 255);"href="https://www.google.com/maps/place/Whitacre+Tower,+208+S+Akard+St,+Dallas,+TX+75201/@32.779561,-96.801078,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9918ddd5d1c3:0xf783f2cfc79e0fb8!8m2!3d32.779561!4d-96.7988893">AT&T Headquarter, 208 S Akard St, Dallas, TX 75201</a>
@@ -148,8 +156,8 @@
 						<li>Analyzing Tech Dispatch data to Public Safety Answering Point (PSAP) to explore the opportunities 
 							for reducing Tech Dispatch</li>
 					</ul>				
-				</div>
-				<div id="researchassistant">
+				</section>
+				<section id="researchassistant" >
 					<h4><i class="fas fa-arrow-right"></i>Research Assistant <span><small style="color:#818181">May 2017-Dec 2018</small></span></h4>
 					<p>
 					<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Computer Science Department at UCO, 100 N. University Dr., Edmond, OK 73034</a>
@@ -161,8 +169,8 @@
 						<li>Presenting the research idea prototype for web app at Oklahoma Research Day 2018 and
 							National Conference of Undergraduate Research (NCUR) 2018</li>
 					</ul>
-				</div>
-				<div id="dataassistant">
+				</section>
+				<section id="dataassistant" >
 					<h4><i class="fas fa-arrow-right"></i>Data Assistant <span><small style="color:#818181">Sep 2017-Feb 2018</small></span></h4>
 					<p>
 					<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Student Support Services at UCO, 100 N. University Dr., Edmond, OK 73034</a>
@@ -172,8 +180,8 @@
 						<li>Verifying and entering data into BLUMEN</li>
 						<li>Retrieving student data from Campus's Database and Creating reports and visualization in Excel as required</li>
 					</ul>
-				</div>
-				<div id="tutor">
+				</section>
+				<section id="tutor" >
 					<h4><i class="fas fa-arrow-right"></i>Tutor <span><small style="color:#818181">Jul 2017-Dec 2018</small></span></h4>
 					<p>
 					<a style="color:rgb(0, 132, 255);" href="https://www.google.com/maps/place/100+N+University+Dr,+Edmond,+OK+73034/@35.6551099,-97.4742053,17z/data=!3m1!4b1!4m5!3m4!1s0x87b21fb0bd3bfa4f:0x9ed4fa0f3cb9521f!8m2!3d35.6551099!4d-97.4720166">Tutoring Central at UCO, 100 N. University Dr., Edmond, OK 73034</a>
@@ -185,11 +193,10 @@
 						<li>Event Planning for Conversation Central</li>
 						<li>Presenting about Tutoring Central in various events on Campus</li>
 					</ul>
-				</div>
-			</div>
+				</section>
 		</div>
 		<div class="line"></div>
-		<div id="skills"class="skills">
+		<section id="skills" >
 			<h2 class="title-bullet"> <i class="fas fa-toolbox"></i> My Skills</h2>
 			<div >
 				<div class="inline-block">
@@ -211,9 +218,9 @@
 					<span><h4 style="display: inline">Development Tools : </h4><p style="display: inline">Git, GitHub, GitLab, Visual Studio, Eclipse, NetBeans, IntelliJ IDEA, Jypter Notebook, Spyder, PyCharm</p></span>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="line"></div>
-		<div id="education">
+		<section id="education" >
 			<h2 class="title-bullet"><i class="fas fa-graduation-cap"></i> Education</h2>
 			<div class="education">
 				<div>
@@ -225,9 +232,9 @@
 					<p>Major in Computer Science-Applied, Minor in Mathematics</p>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="line"></div>
-		<div id="honor">
+		<section id="honor" >
 			<h2 class="title-bullet"><i class="fas fa-award"></i> Honor</h2>
 			<div class="row">
 				<div class="col">
@@ -247,14 +254,14 @@
 						<p>Spring 2017</p>
 				</div>
 			</div>                   
-		</div>
+		</section>
 		<div class="line"></div>
-		<div id="contact"class="contact" style="margin-bottom:20px;">
+		<section id="contact"  >
 			<h2 class="title-bullet"><i class="fas fa-envelope"></i> Contact</h2>
 			<p><a href="mailto:beekpal@gmail.com"><i class="far fa-envelope"></i> beekpal@gmail.com </a></p>
 			<p><i class="fas fa-mobile-alt"></i> 469.536.9581</P>
 			<br>
-		</div>
+		</section>
 		<p style="color:green;font-size:15px;">&copy; Bikram Paudel 2020</p>
 	</div>
 </div>
@@ -266,16 +273,26 @@
 <!-- Bootstrap JS -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
 <script type="text/javascript">
+	
 	$(document).ready(function () {
-		$('#sidebarCollapse').on('click', function () {
-			$('#sidebar').toggleClass('active');
-			$(this).toggleClass('active');
+		$("#sidebar").mCustomScrollbar({
+			theme: "minimal"
 		});
 
-		$('.sidebarCollapseBtn').on('click', function () {
-			$('#sidebar').toggleClass('active');
-			$('#sidebarCollapse').toggleClass('active');
+		$('#dismiss, .overlay, .collapsesidebar').on('click', function () {
+			$('#sidebar').removeClass('active');
+			$('.overlay').removeClass('active');
+		});
+
+		$('#sidebarCollapse').on('click', function () {
+			$('#sidebar').addClass('active');
+			$('.overlay').addClass('active');
+			$('.collapse.in').toggleClass('in');
+			$('a[aria-expanded=true]').attr('aria-expanded', 'false');
 		});
 	});
 
